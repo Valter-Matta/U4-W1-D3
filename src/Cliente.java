@@ -14,5 +14,8 @@ public class Cliente {
 		this.dataIscrizione = dataIscrizione;
 	}
 
+	public String getNome(){
+		return nomeCognome;
+	}
 
 }
