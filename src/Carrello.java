@@ -26,8 +26,9 @@ public class Carrello {
 		System.out.println("Cliente: " + cliente.getNome());
 		System.out.println("articoli nel carrelo");
 		for (int i = 0; i < count; i++) {
-			System.out.print("n" + i + ": " + articoli[i].getNome() + " | Prezzo: " + articoli[i].getPrezzo());
+			System.out.println("n" + (i+1) + ": " + articoli[i].getNome() + " | Prezzo: " + articoli[i].getPrezzo() + " €  | Q."+ articoli[i].getQuantità());
 		}
+		System.out.println("Per un totale di: "+ totaleCosto + " €");
 	}
 
 }

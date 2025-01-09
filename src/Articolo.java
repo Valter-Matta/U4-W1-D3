@@ -29,11 +29,15 @@ public class Articolo {
 	public static void main (String[] args) {
 		LocalDate oggi = LocalDate.now();
 		Cliente user1 = new Cliente("001", "Valter matta", "valter@gmail.com", oggi);
-		Articolo pc1 = new Articolo("#01", "pc-gaming", 400, 3);
+		Articolo pc1 = new Articolo("#01", "pc-gaming", 400, 1);
+		Articolo tastiera = new Articolo("#02", "tastiera Razer", 150, 1);
+		Articolo monitor = new Articolo("#03", "WQHD34PC", 240, 2);
 		Carrello cart = new Carrello(user1);
 
 
 		cart.addToCart(pc1);
+		cart.addToCart(tastiera);
+		cart.addToCart(monitor);
 		cart.showContent();
 
 
